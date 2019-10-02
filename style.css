@@ -1,0 +1,30 @@
+/* Variables */
+:root {
+    --dark-grey: #333;
+    --light-grey: #ddd;
+    --lime: #0f0;
+}
+
+/* Arrangement */
+body {
+    text-align: center;
+    vertical-align: center;
+}
+
+h1 {
+    font-size: 72px;
+}
+
+/* Light color */
+body {
+    background-color:  var(--light-grey);
+    color: var(--dark-grey);
+}
+
+/* Dark color */
+@media screen and (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--dark-grey);
+        color: var(--lime);
+    }
+}
