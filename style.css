@@ -3,6 +3,8 @@
     --dark-grey: #333;
     --light-grey: #ddd;
     --lime: #0f0;
+    --pink: #f6b;
+    --red: #f00;
 }
 
 /* Arrangement */
@@ -14,17 +16,29 @@ body {
 h1 {
     font-size: 72px;
 }
-
-/* Light color */
+/* Default color */
 body {
     background-color:  var(--light-grey);
-    color: var(--dark-grey);
+    color: var(--red);
 }
 
-/* Dark color */
+/* prefers-color-scheme color preference */
+/* could switch dark to light depending on default colors */
 @media screen and (prefers-color-scheme: dark) {
     body {
         background-color: var(--dark-grey);
         color: var(--lime);
     }
+}
+
+/* Force light color */
+body.light {
+    background-color:  var(--light-grey);
+    color: var(--dark-grey);
+}
+
+/* Force dark color */
+body.dark {
+    background-color: var(--dark-grey);
+    color: var(--pink);
 }
