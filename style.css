@@ -11,15 +11,12 @@
 body {
     text-align: center;
     vertical-align: center;
+    background-color: var(--light-grey);
+    color: var(--red);
 }
 
 h1 {
     font-size: 72px;
-}
-/* Default color */
-body {
-    background-color:  var(--light-grey);
-    color: var(--red);
 }
 
 /* prefers-color-scheme color preference */
@@ -33,7 +30,7 @@ body {
 
 /* Force light color */
 body.light {
-    background-color:  var(--light-grey);
+    background-color: var(--light-grey);
     color: var(--dark-grey);
 }
 
